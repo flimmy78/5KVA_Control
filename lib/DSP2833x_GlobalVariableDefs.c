@@ -1,5 +1,3 @@
-// TI File $Revision: /main/2 $
-// Checkin $Date: March 5, 2007   12:20:33 $
 //###########################################################################
 //
 // FILE:	DSP2833x_GlobalVariableDefs.c
@@ -7,8 +5,10 @@
 // TITLE:	DSP2833x Global Variables and Data Section Pragmas.
 //
 //###########################################################################
-// $TI Release: DSP2833x Header Files V1.01 $
-// $Release Date: September 26, 2007 $
+// $TI Release: F2833x/F2823x Header Files and Peripheral Examples V141 $
+// $Release Date: November  6, 2015 $
+// $Copyright: Copyright (C) 2007-2015 Texas Instruments Incorporated -
+//             http://www.ti.com/ ALL RIGHTS RESERVED $
 //###########################################################################
 
 #include "DSP2833x_Device.h"     // DSP2833x Headerfile Include File
@@ -48,7 +48,6 @@ volatile struct CPUTIMER_REGS CpuTimer0Regs;
 #endif
 volatile struct CPUTIMER_REGS CpuTimer1Regs;
 
-
 //----------------------------------------
 #ifdef __cplusplus
 #pragma DATA_SECTION("CpuTimer2RegsFile")
@@ -56,7 +55,6 @@ volatile struct CPUTIMER_REGS CpuTimer1Regs;
 #pragma DATA_SECTION(CpuTimer2Regs,"CpuTimer2RegsFile");
 #endif
 volatile struct CPUTIMER_REGS CpuTimer2Regs;
-
 
 //----------------------------------------
 #ifdef __cplusplus
@@ -74,8 +72,6 @@ volatile struct CSM_PWL CsmPwl;
 #endif
 volatile struct CSM_REGS CsmRegs;
 
-
-
 //----------------------------------------
 #ifdef __cplusplus
 #pragma DATA_SECTION("DevEmuRegsFile")
@@ -91,7 +87,6 @@ volatile struct DEV_EMU_REGS DevEmuRegs;
 #pragma DATA_SECTION(DmaRegs,"DmaRegsFile");
 #endif
 volatile struct DMA_REGS DmaRegs;
-
 
 //----------------------------------------
 #ifdef __cplusplus
@@ -125,7 +120,6 @@ volatile struct LAM_REGS ECanaLAMRegs;
 #endif
 volatile struct MOTS_REGS ECanaMOTSRegs;
 
-
 //----------------------------------------
 #ifdef __cplusplus
 #pragma DATA_SECTION("ECanaMOTORegsFile")
@@ -133,7 +127,6 @@ volatile struct MOTS_REGS ECanaMOTSRegs;
 #pragma DATA_SECTION(ECanaMOTORegs,"ECanaMOTORegsFile");
 #endif
 volatile struct MOTO_REGS ECanaMOTORegs;
-
 
 //----------------------------------------
 #ifdef __cplusplus
@@ -167,7 +160,6 @@ volatile struct LAM_REGS ECanbLAMRegs;
 #endif
 volatile struct MOTS_REGS ECanbMOTSRegs;
 
-
 //----------------------------------------
 #ifdef __cplusplus
 #pragma DATA_SECTION("ECanbMOTORegsFile")
@@ -183,7 +175,6 @@ volatile struct MOTO_REGS ECanbMOTORegs;
 #pragma DATA_SECTION(EPwm1Regs,"EPwm1RegsFile");
 #endif
 volatile struct EPWM_REGS EPwm1Regs;
-
 
 //----------------------------------------
 #ifdef __cplusplus
@@ -225,7 +216,6 @@ volatile struct EPWM_REGS EPwm5Regs;
 #endif
 volatile struct EPWM_REGS EPwm6Regs;
 
-
 //----------------------------------------
 #ifdef __cplusplus
 #pragma DATA_SECTION("ECap1RegsFile")
@@ -233,7 +223,6 @@ volatile struct EPWM_REGS EPwm6Regs;
 #pragma DATA_SECTION(ECap1Regs,"ECap1RegsFile");
 #endif
 volatile struct ECAP_REGS ECap1Regs;
-
 
 //----------------------------------------
 #ifdef __cplusplus
@@ -341,6 +330,14 @@ volatile struct MCBSP_REGS McbspbRegs;
 
 //----------------------------------------
 #ifdef __cplusplus
+#pragma DATA_SECTION("PartIdRegsFile")
+#else
+#pragma DATA_SECTION(PartIdRegs,"PartIdRegsFile");
+#endif
+volatile struct PARTID_REGS PartIdRegs;
+
+//----------------------------------------
+#ifdef __cplusplus
 #pragma DATA_SECTION("PieCtrlRegsFile")
 #else
 #pragma DATA_SECTION(PieCtrlRegs,"PieCtrlRegsFile");
@@ -353,7 +350,7 @@ volatile struct PIE_CTRL_REGS PieCtrlRegs;
 #else
 #pragma DATA_SECTION(PieVectTable,"PieVectTableFile");
 #endif
-struct PIE_VECT_TABLE PieVectTable;
+volatile struct PIE_VECT_TABLE PieVectTable;
 
 //----------------------------------------
 #ifdef __cplusplus
@@ -378,7 +375,6 @@ volatile struct SCI_REGS ScibRegs;
 #pragma DATA_SECTION(ScicRegs,"ScicRegsFile");
 #endif
 volatile struct SCI_REGS ScicRegs;
-
 
 //----------------------------------------
 #ifdef __cplusplus
@@ -420,17 +416,7 @@ volatile struct XINTRUPT_REGS XIntruptRegs;
 #endif
 volatile struct XINTF_REGS XintfRegs;
 
-
-
 //===========================================================================
 // End of file.
 //===========================================================================
-
-
-
-
-
-
-
-
 

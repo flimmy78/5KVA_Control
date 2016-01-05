@@ -41,9 +41,10 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.OPT_FOR_SPACE.875052679" name="Optimize for code size (--opt_for_space, -ms)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.OPT_FOR_SPACE" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEBUGGING_MODEL.961794445" name="Debugging model" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH.1061703131" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.INCLUDE_PATH" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${XDAIS_CG_ROOT}/packages/ti/xdais&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:/CCStudio_v3.3PLA/MyProjects/Bidirectional_converter&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2833X_V141}\DSP2833x_common\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${INSTALLROOT_F2833X_V141}\DSP2833x_headers\include&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEFINE.519962170" name="Pre-define NAME (--define, -D)" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.0.compilerID.DEFINE" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="&quot;_DEBUG&quot;"/>

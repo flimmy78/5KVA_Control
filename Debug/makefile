@@ -10,12 +10,17 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"C:/Users/longqi/Desktop/rts2800_fpu32_fast_supplement.lib" \
-"C:/Users/longqi/Desktop/rts2800_fpu32.lib" \
-"C:/Users/longqi/Desktop/F28335_Flash_lnk.cmd" \
-"C:/Users/longqi/Desktop/F28335_nonBIOS.cmd" \
+"C:/Users/longqi/Desktop/5KVA_Control/rts2800_fpu32_fast_supplement.lib" \
+"C:/Users/longqi/Desktop/5KVA_Control/rts2800_fpu32.lib" \
+"C:/Users/longqi/Desktop/5KVA_Control/F28335_Flash_lnk.cmd" \
+"C:/Users/longqi/Desktop/5KVA_Control/F28335_nonBIOS.cmd" \
 "C:/Users/longqi/Desktop/Debug/5KW_Main_Rectifier.obj" \
+"C:/Users/longqi/Desktop/Debug/CanBus.obj" \
 "C:/Users/longqi/Desktop/Debug/DA.obj" \
+"C:/Users/longqi/Desktop/Debug/LJGlobalVars.obj" \
+"C:/Users/longqi/Desktop/Debug/RS232.obj" \
+"C:/Users/longqi/Desktop/Debug/UserFunc.obj" \
+"C:/Users/longqi/Desktop/Debug/UserSet.obj" \
 "C:/Users/longqi/Desktop/Debug/DSP2833x_ADC_cal.obj" \
 "C:/Users/longqi/Desktop/Debug/DSP2833x_CodeStartBranch.obj" \
 "C:/Users/longqi/Desktop/Debug/DSP2833x_CpuTimers.obj" \
@@ -29,10 +34,7 @@ ORDERED_OBJS += \
 "C:/Users/longqi/Desktop/Debug/DSP2833x_PieVect.obj" \
 "C:/Users/longqi/Desktop/Debug/DSP2833x_SysCtrl.obj" \
 "C:/Users/longqi/Desktop/Debug/DSP2833x_usDelay.obj" \
-"C:/Users/longqi/Desktop/Debug/LJGlobalVars.obj" \
-"C:/Users/longqi/Desktop/Debug/RS232.obj" \
-"C:/Users/longqi/Desktop/Debug/UserFunc.obj" \
-"C:/Users/longqi/Desktop/Debug/UserSet.obj" \
+"C:/Users/longqi/Desktop/Debug/fir16.obj" \
 $(GEN_CMDS__FLAG) \
 
 -include ../makefile.init
@@ -43,7 +45,13 @@ RMDIR := RMDIR /S/Q
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir_vars.mk
+-include src/subdir_vars.mk
+-include lib/subdir_vars.mk
+-include include/subdir_vars.mk
 -include subdir_rules.mk
+-include src/subdir_rules.mk
+-include lib/subdir_rules.mk
+-include include/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -157,9 +165,10 @@ C:/Users/longqi/Desktop/5KVA_Control/../Debug/EPWM_TEST.out: $(OBJS) $(CMD_SRCS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "5KW_Main_Rectifier.pp" "DA.pp" "DSP2833x_CpuTimers.pp" "DSP2833x_DMA.pp" "DSP2833x_DefaultIsr.pp" "DSP2833x_ECan.pp" "DSP2833x_GlobalVariableDefs.pp" "DSP2833x_Gpio.pp" "DSP2833x_MemCopy.pp" "DSP2833x_PieCtrl.pp" "DSP2833x_PieVect.pp" "DSP2833x_SysCtrl.pp" "LJGlobalVars.pp" "RS232.pp" "UserFunc.pp" "UserSet.pp" 
-	-$(RM) "C:\Users\longqi\Desktop\Debug\5KW_Main_Rectifier.obj" "C:\Users\longqi\Desktop\Debug\DA.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_ADC_cal.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_CodeStartBranch.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_CpuTimers.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_DMA.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_DefaultIsr.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_ECan.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_GlobalVariableDefs.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_Gpio.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_MemCopy.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_PieCtrl.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_PieVect.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_SysCtrl.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_usDelay.obj" "C:\Users\longqi\Desktop\Debug\LJGlobalVars.obj" "C:\Users\longqi\Desktop\Debug\RS232.obj" "C:\Users\longqi\Desktop\Debug\UserFunc.obj" "C:\Users\longqi\Desktop\Debug\UserSet.obj" 
-	-$(RM) "DSP2833x_ADC_cal.pp" "DSP2833x_CodeStartBranch.pp" "DSP2833x_usDelay.pp" 
+	-$(RM) "src\5KW_Main_Rectifier.pp" "src\CanBus.pp" "src\DA.pp" "src\LJGlobalVars.pp" "src\RS232.pp" "src\UserFunc.pp" "src\UserSet.pp" "lib\DSP2833x_CpuTimers.pp" "lib\DSP2833x_DMA.pp" "lib\DSP2833x_DefaultIsr.pp" "lib\DSP2833x_ECan.pp" "lib\DSP2833x_GlobalVariableDefs.pp" "lib\DSP2833x_Gpio.pp" "lib\DSP2833x_MemCopy.pp" "lib\DSP2833x_PieCtrl.pp" "lib\DSP2833x_PieVect.pp" "lib\DSP2833x_SysCtrl.pp" 
+	-$(RM) "C:\Users\longqi\Desktop\Debug\5KW_Main_Rectifier.obj" "C:\Users\longqi\Desktop\Debug\CanBus.obj" "C:\Users\longqi\Desktop\Debug\DA.obj" "C:\Users\longqi\Desktop\Debug\LJGlobalVars.obj" "C:\Users\longqi\Desktop\Debug\RS232.obj" "C:\Users\longqi\Desktop\Debug\UserFunc.obj" "C:\Users\longqi\Desktop\Debug\UserSet.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_ADC_cal.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_CodeStartBranch.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_CpuTimers.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_DMA.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_DefaultIsr.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_ECan.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_GlobalVariableDefs.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_Gpio.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_MemCopy.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_PieCtrl.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_PieVect.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_SysCtrl.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_usDelay.obj" 
+	-$(RM) "C:\Users\longqi\Desktop\Debug\fir16.obj" 
+	-$(RM) "lib\DSP2833x_ADC_cal.pp" "lib\DSP2833x_CodeStartBranch.pp" "lib\DSP2833x_usDelay.pp" "include\fir16.pp" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
