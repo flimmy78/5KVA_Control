@@ -87,31 +87,6 @@
 			<locationURI>SRC_ROOT/5KVA_Control.pjt</locationURI>
 		</link>
 		<link>
-			<name>F28335_Flash_lnk.cmd</name>
-			<type>1</type>
-			<locationURI>SRC_ROOT/F28335_Flash_lnk.cmd</locationURI>
-		</link>
-		<link>
-			<name>F28335_nonBIOS.cmd</name>
-			<type>1</type>
-			<locationURI>SRC_ROOT/F28335_nonBIOS.cmd</locationURI>
-		</link>
-		<link>
-			<name>rts2800_fpu32.lib</name>
-			<type>1</type>
-			<locationURI>SRC_ROOT/rts2800_fpu32.lib</locationURI>
-		</link>
-		<link>
-			<name>rts2800_fpu32_fast_supplement.lib</name>
-			<type>1</type>
-			<locationURI>SRC_ROOT/rts2800_fpu32_fast_supplement.lib</locationURI>
-		</link>
-		<link>
-			<name>Debug/EPWM_TEST.out</name>
-			<type>1</type>
-			<locationURI>EXTERNAL_BUILD_ARTIFACT</locationURI>
-		</link>
-		<link>
 			<name>include/CRC16.h</name>
 			<type>1</type>
 			<locationURI>SRC_ROOT/CRC16.h</locationURI>

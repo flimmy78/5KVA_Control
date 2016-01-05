@@ -218,19 +218,19 @@ extern volatile enum FaultState FaultType;
 
 struct SwVal_BITS                 //
 {
-	Uint16 Sw1:1;                 //±êÖ¾Î»1£¬ ¿ª¹ØSw1µÄ¼üÖµ£¨0Îª¿ª£¬1Îª¹Ø£©
-	Uint16 Sw2:1;                 //±êÖ¾Î»2£¬ ¿ª¹ØSw2µÄ¼üÖµ£¨0Îª¿ª£¬1Îª¹Ø£©
-	Uint16 Sw3:1;                 //±êÖ¾Î»3£¬ ¿ª¹ØSw3µÄ¼üÖµ£¨0Îª¿ª£¬1Îª¹Ø£©
-	Uint16 Sw4:1;                 //±êÖ¾Î»4£¬ ¿ª¹ØSw4µÄ¼üÖµ£¨0Îª¿ª£¬1Îª¹Ø£©
-	Uint16 Sw5:1;                 //±êÖ¾Î»5£¬ ¿ª¹ØSw5µÄ¼üÖµ£¨0Îª¿ª£¬1Îª¹Ø£©
-	Uint16 rsvd6:1;               //±êÖ¾Î»6£¬ ÔÝÊ±±£Áô
-	Uint16 rsvd7:1;               //±êÖ¾Î»7£¬ ÔÝÊ±±£Áô
-	Uint16 rsvd8:1;               //±êÖ¾Î»8£¬ ÔÝÊ±±£Áô
-	Uint16 rsvd9:1;               //±êÖ¾Î»9£¬ ÔÝÊ±±£Áô
-	Uint16 rsvd10:1;              //±êÖ¾Î»10£¬ ÔÝÊ±±£Áô
-	Uint16 rsvd11:1;              //±êÖ¾Î»11£¬ ÔÝÊ±±£Áô
-	Uint16 rsvd12:1;              //±êÖ¾Î»12£¬ ÔÝÊ±±£Áô
-	Uint16 rsvd13:1;              //±êÖ¾Î»13£¬ ÔÝÊ±±£Áô
+	Uint16 Sw1:1;                 //ï¿½ï¿½Ö¾Î»1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Sw1ï¿½Ä¼ï¿½Öµï¿½ï¿½0Îªï¿½ï¿½ï¿½ï¿½1Îªï¿½Ø£ï¿½
+	Uint16 Sw2:1;                 //ï¿½ï¿½Ö¾Î»2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Sw2ï¿½Ä¼ï¿½Öµï¿½ï¿½0Îªï¿½ï¿½ï¿½ï¿½1Îªï¿½Ø£ï¿½
+	Uint16 Sw3:1;                 //ï¿½ï¿½Ö¾Î»3ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Sw3ï¿½Ä¼ï¿½Öµï¿½ï¿½0Îªï¿½ï¿½ï¿½ï¿½1Îªï¿½Ø£ï¿½
+	Uint16 Sw4:1;                 //ï¿½ï¿½Ö¾Î»4ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Sw4ï¿½Ä¼ï¿½Öµï¿½ï¿½0Îªï¿½ï¿½ï¿½ï¿½1Îªï¿½Ø£ï¿½
+	Uint16 Sw5:1;                 //ï¿½ï¿½Ö¾Î»5ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Sw5ï¿½Ä¼ï¿½Öµï¿½ï¿½0Îªï¿½ï¿½ï¿½ï¿½1Îªï¿½Ø£ï¿½
+	Uint16 rsvd6:1;               //ï¿½ï¿½Ö¾Î»6ï¿½ï¿½ ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+	Uint16 rsvd7:1;               //ï¿½ï¿½Ö¾Î»7ï¿½ï¿½ ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+	Uint16 rsvd8:1;               //ï¿½ï¿½Ö¾Î»8ï¿½ï¿½ ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+	Uint16 rsvd9:1;               //ï¿½ï¿½Ö¾Î»9ï¿½ï¿½ ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+	Uint16 rsvd10:1;              //ï¿½ï¿½Ö¾Î»10ï¿½ï¿½ ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+	Uint16 rsvd11:1;              //ï¿½ï¿½Ö¾Î»11ï¿½ï¿½ ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+	Uint16 rsvd12:1;              //ï¿½ï¿½Ö¾Î»12ï¿½ï¿½ ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+	Uint16 rsvd13:1;              //ï¿½ï¿½Ö¾Î»13ï¿½ï¿½ ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
 	Uint16 rsvd14:1;              //
 	Uint16 rsvd15:1;              //
 	Uint16 rsvd16:1;              //
@@ -245,22 +245,22 @@ union SwVal_Var
 //Inverter status flag
 struct ProFlg_BITS
 {
-	Uint16 ADCOffSet:1;            //±êÖ¾Î»1£¬ADCÆ«ÒÆÁ¿²ÉÑùÍê³É±êÖ¾£¬1ÎªÍê³É
-	Uint16 DCBusVol:1;             //±êÖ¾Î»2£¬Ö±Á÷Ä¸ÏßµçÑ¹Õý³£±êÖ¾Î»£¬1ÎªÕý³£
-	Uint16 ACBusVol:1;             //±êÖ¾Î»3£¬µçÍøÄ¸ÏßµçÑ¹¼ì²â
-	Uint16 PhaseLocked:1;          //±êÖ¾Î»4£¬ËøÏà³É¹¦±êÖ¾Î»£¬1Îª³É¹¦
-	Uint16 SoftStart:1;            //±êÖ¾Î»5£¬ÈíÆô¶¯Íê³É±êÖ¾Î»
-	Uint16 StartUp:1;              //±êÖ¾Î»9£¬Æô¶¯Íê³É±êÖ¾
-	Uint16 Restart:1;               //±êÖ¾Î»10£¬¹ÊÕÏÖØÆô±êÖ¾£¬À´×ÔCan
-	Uint16 PhaseFault:1;               //Äæ±äÆ÷ºÍµçÍøÏàÎ»²î¹ý´ó±êÖ¾
-	Uint16 FanOn:1;               //±êÖ¾Î»12£¬·çÉÈ¿ªÆô±êÖ¾Î»
-	Uint16 FreFault:1;               //ÆµÂÊ´íÎó
-	Uint16 Mode:1;               //±êÖ¾Î»15£¬Õ¼¿Õ±ÈÆ«ÖÃÁ¿K0µ½´ï0.5±êÖ¾Î»£¬0£ºÎ´µ½£¬1£ºµ½´ï
-	Uint16 RelaySt:1;              //±êÖ¾Î»16£¬½Ó´¥Æ÷×´Ì¬Î»£¨0Îª¶Ï¿ª£¬1Îª±ÕºÏ£©
+	Uint16 ADCOffSet:1;            //ï¿½ï¿½Ö¾Î»1ï¿½ï¿½ADCÆ«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É±ï¿½Ö¾ï¿½ï¿½1Îªï¿½ï¿½ï¿½
+	Uint16 DCBusVol:1;             //ï¿½ï¿½Ö¾Î»2ï¿½ï¿½Ö±ï¿½ï¿½Ä¸ï¿½ßµï¿½Ñ¹ï¿½ï¿½ï¿½Ö¾Î»ï¿½ï¿½1Îªï¿½ï¿½
+	Uint16 ACBusVol:1;             //ï¿½ï¿½Ö¾Î»3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ßµï¿½Ñ¹ï¿½ï¿½ï¿½
+	Uint16 PhaseLocked:1;          //ï¿½ï¿½Ö¾Î»4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½Ö¾Î»ï¿½ï¿½1Îªï¿½É¹ï¿½
+	Uint16 SoftStart:1;            //ï¿½ï¿½Ö¾Î»5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É±ï¿½Ö¾Î»
+	Uint16 StartUp:1;              //ï¿½ï¿½Ö¾Î»9ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É±ï¿½Ö¾
+	Uint16 Restart:1;               //ï¿½ï¿½Ö¾Î»10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Can
+	Uint16 PhaseFault:1;               //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
+	Uint16 FanOn:1;               //ï¿½ï¿½Ö¾Î»12ï¿½ï¿½ï¿½ï¿½ï¿½È¿ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾Î»
+	Uint16 FreFault:1;               //Æµï¿½Ê´ï¿½ï¿½ï¿½
+	Uint16 Mode:1;               //ï¿½ï¿½Ö¾Î»15ï¿½ï¿½Õ¼ï¿½Õ±ï¿½Æ«ï¿½ï¿½ï¿½ï¿½K0ï¿½ï¿½ï¿½ï¿½0.5ï¿½ï¿½Ö¾Î»ï¿½ï¿½0ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Uint16 RelaySt:1;              //ï¿½ï¿½Ö¾Î»16ï¿½ï¿½ï¿½Ó´ï¿½ï¿½ï¿½×´Ì¬Î»ï¿½ï¿½0Îªï¿½Ï¿ï¿½ï¿½ï¿½1Îªï¿½ÕºÏ£ï¿½
 
-	Uint16 ACOverCur:1;            //µç¸ÐµçÁ÷¹ýÁ÷±êÖ¾
-	Uint16 DCOverCur:1;            //Ö±Á÷²à¹ýÁ÷±êÖ¾
-	Uint16 HardFault:1;            //Ó²¼þ±£»¤±êÖ¾
+	Uint16 ACOverCur:1;            //ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
+	Uint16 DCOverCur:1;            //Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
+	Uint16 HardFault:1;            //Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
 
 	Uint16 OrderOn:1;              //Turn ON command from the key
 };
@@ -275,9 +275,9 @@ union ProFlg_Var
 extern volatile union ProFlg_Var ProFlag;
 /***********************************************************************/
 
-//  ²ÉÑù±äÁ¿¶¨Òå
+//  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-struct SampRes_STRUCT            // ÓÃÒÔ´æ·Å²ÉÑù½á¹ûµÄ½á¹¹Ìå£¬´øn±äÁ¿ÎªÎ´»»ËãÕûÐÍÖµ£¬´øfÎª»»ËãºóµÄ¸¡µãÕæÖµ
+struct SampRes_STRUCT            // ï¿½ï¿½ï¿½Ô´ï¿½Å²ï¿½ï¿½ï¿½ï¿½ï¿½Ä½á¹¹ï¿½å£¬ï¿½ï¿½nï¿½ï¿½ï¿½ï¿½ÎªÎ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½fÎªï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
 {
 	float    IndCurAn;           
 	float    IndCurBn;          
@@ -327,7 +327,7 @@ struct SampRes_STRUCT1            // ###################################
 
 };
 
-extern volatile struct SampRes_STRUCT SampRes;      //´æ·Å²ÉÑù½á¹û
+extern volatile struct SampRes_STRUCT SampRes;      //ï¿½ï¿½Å²ï¿½ï¿½ï¿½ï¿½ï¿½
 extern volatile struct  SampRes_STRUCT1 SampRes1; //###################################
 struct OffSet_STRUCT                
 {
@@ -348,105 +348,105 @@ extern volatile struct OffSet_STRUCT OffSetRes;
 
 /***********************************************************************/
 
-struct SigGeneVars_STRUCT      // ²âÊÔ²¨ÐÎú³
+struct SigGeneVars_STRUCT      // ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½
 {
-	int16 n;                   // Êýµã¼ÆÊýÆ÷
+	int16 n;                   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
-	float nwt;                 // Ä£ÄâËøÏàÏà½Ç
+	float nwt;                 // Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	int16 InSig;               // µ¥ÏàÐÅºÅ
-	int16 InSiga;              // ÈýÏàÐÅºÅaÏà
-	int16 InSigb;              // ÈýÏàÐÅºÅbÏà
-	int16 InSigc;              // ÈýÏàÐÅºÅcÏà
+	int16 InSig;               // ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½
+	int16 InSiga;              // ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½aï¿½ï¿½
+	int16 InSigb;              // ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½bï¿½ï¿½
+	int16 InSigc;              // ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½cï¿½ï¿½
 };
 
 extern volatile struct SigGeneVars_STRUCT SigGeneVars;
 /***********************************************************************/
 
-struct DQTrans_STRUCT      // Ðý×ª±ä»»½á¹¹Ìå
+struct DQTrans_STRUCT      // ï¿½ï¿½×ªï¿½ä»»ï¿½á¹¹ï¿½ï¿½
 {
-	float wt;        // ½ÇËÙ¶È
-	float Phase;     //ÏàÎ»
-	float Fre;          //Ðý×ªÆµÂÊ
+	float wt;        // ï¿½ï¿½ï¿½Ù¶ï¿½
+	float Phase;     //ï¿½ï¿½Î»
+	float Fre;          //ï¿½ï¿½×ªÆµï¿½ï¿½
 
-	float32 a;         // ÈýÏà¾²Ö¹×ø±êÏµ±äÁ¿
+	float32 a;         // ï¿½ï¿½ï¿½à¾²Ö¹ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½
 	float32 b;
 	float32 c;
 
-	float32 d;         // ÈýÏàÐý×ª×ø±êÏµ±äÁ¿
+	float32 d;         // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½
 	float32 q;
 	float32 o;
 
-	float32 dfilt;     // ¾­Êý×ÖÂË²¨ºóµÄÁ¿
+	float32 dfilt;     // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	float32 qfilt;
 	float32 ofilt;
 
  };
-extern volatile struct DQTrans_STRUCT GridVoltagePLL;  //µçÍøµçÑ¹ËøÏà½á¹¹Ìå
-extern volatile struct DQTrans_STRUCT GridVoltagePLL1;  //µçÍøµçÑ¹ËøÏà½á¹¹Ìå
-extern volatile struct DQTrans_STRUCT BriVolDQ;        //ÇÅ±ÛµçÑ¹DQ½á¹¹Ìå
-extern volatile struct DQTrans_STRUCT SoftStartDQ;     //ÈíÆô¶¯DQ½á¹¹Ìå
-extern volatile struct DQTrans_STRUCT SPWMGen;        //SPWM·¢Éú¼Ä´æÆ÷
-extern volatile struct DQTrans_STRUCT CurReference;    //Êä³öµçÁ÷²Î¿¼Öµ
-extern volatile struct DQTrans_STRUCT IndCurDQ;        //µç¸ÐµçÁ÷¼Ä´æÆ÷
+extern volatile struct DQTrans_STRUCT GridVoltagePLL;  //ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
+extern volatile struct DQTrans_STRUCT GridVoltagePLL1;  //ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½á¹¹ï¿½ï¿½
+extern volatile struct DQTrans_STRUCT BriVolDQ;        //ï¿½Å±Ûµï¿½Ñ¹DQï¿½á¹¹ï¿½ï¿½
+extern volatile struct DQTrans_STRUCT SoftStartDQ;     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½DQï¿½á¹¹ï¿½ï¿½
+extern volatile struct DQTrans_STRUCT SPWMGen;        //SPWMï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½
+extern volatile struct DQTrans_STRUCT CurReference;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½Öµ
+extern volatile struct DQTrans_STRUCT IndCurDQ;        //ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½
 extern volatile struct DQTrans_STRUCT DTCom;
 /***********************************************************************/
 
-struct FuncCounter_STRUCT            //º¯ÊýÊ±»ù¼ÆÊýÆ÷
+struct FuncCounter_STRUCT            //ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 {
-  Uint16 CurLoopCount;               //µçÁ÷±Õ»·ÈíÆô¶¯¼ÆÊýÆ÷
-  Uint16 FreDetCount;                //µçÍøÆµÂÊ¼ì²â¼ÆÊýÆ÷
-  Uint16 DCBusVolCount;              //Ö±Á÷²àÄ¸ÏßµçÑ¹
-  Uint16 ACBusCount;                 //½»Á÷²àµçÑ¹¼ì²â
-  Uint16 STCount;                    //ÇÅ±ÛÈíÆô¶¯
-  Uint16 ACCurCount;                 //½»Á÷²àµçÁ÷¼ì²â
-  Uint16 DCCurCount;                 //Ö±Á÷²àµçÁ÷¼ì²â
-  Uint16 CurUnbalCount;              //µçÁ÷²»Æ½ºâ¼ì²â
-  Uint16 RelayCount;                 //¼ÌµçÆ÷¿ØÖÆ
-  Uint16 EcanCount;                  //CanÍ¨Ñ¶¼ÆÊýÆ÷
+  Uint16 CurLoopCount;               //ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  Uint16 FreDetCount;                //ï¿½ï¿½ï¿½ï¿½Æµï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  Uint16 DCBusVolCount;              //Ö±ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ßµï¿½Ñ¹
+  Uint16 ACBusCount;                 //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½
+  Uint16 STCount;                    //ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  Uint16 ACCurCount;                 //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  Uint16 DCCurCount;                 //Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  Uint16 CurUnbalCount;              //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½
+  Uint16 RelayCount;                 //ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  Uint16 EcanCount;                  //CanÍ¨Ñ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   Uint16 OffSetCount;     
-  Uint16 FanOpeCount;               //·çÉÈÆô¶¯¼ÆÊýÆ÷  
-  Uint16 DrpModeCount1;              //ÇÐ»»DroopÄ£Ê½¼ÆÊýÆ÷  
+  Uint16 FanOpeCount;               //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
+  Uint16 DrpModeCount1;              //ï¿½Ð»ï¿½DroopÄ£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
   Uint16 DrpModeCount2;       
 };
 extern volatile struct FuncCounter_STRUCT FuncCounter;
 /***********************************************************************/
 
-typedef struct       // PIDËã·¨½á¹¹Ìå
+typedef struct       // PIDï¿½ã·¨ï¿½á¹¹ï¿½ï¿½
 {
-	float Ref;       // PIDËã·¨²Î¿¼Öµ
+	float Ref;       // PIDï¿½ã·¨ï¿½Î¿ï¿½Öµ
 
 /*
-    ÕâÀïPID²ÎÊýÊÇ»ùÓÚÈçÏÂPID»ù±¾ÐÎÊ½ÉèÖÃµÄ:
+    ï¿½ï¿½ï¿½ï¿½PIDï¿½ï¿½ï¿½ï¿½ï¿½Ç»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PIDï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ãµï¿½:
 	u(t) = Kp*e(t) + Ki*int(e(t)) + Kd*diff(e(t))          (1)
-	ÆäÖÐ£¬e(t),int(e(t)),diff(e(t))·Ö±ðÎªÎó²îÏî¡¢Îó²î»ý·ÖÏî¡¢Îó²îÎ¢·ÖÏî¡£
-	½«PID±í´ïÊ½×÷À­ÊÏ±ä»»£ºD(s) = Kp + Ki*1/s + Kd*s£¬½«ÆäÀëÉ¢»¯²¢×ª»¯Îª²î·Ö·½³Ì£º
+	ï¿½ï¿½ï¿½Ð£ï¿½e(t),int(e(t)),diff(e(t))ï¿½Ö±ï¿½Îªï¿½ï¿½ï¿½ï¿½î¡¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¡¢ï¿½ï¿½ï¿½Î¢ï¿½ï¿½ï¿½î¡£
+	ï¿½ï¿½PIDï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ä»»ï¿½ï¿½D(s) = Kp + Ki*1/s + Kd*sï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¢ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½Ö·ï¿½ï¿½Ì£ï¿½
 	u(k) = u(k-1) + a0*e(k) - a1*e(k-1) + a2*e(k-2)        (2)
-	ÆäÖÐ,ÀëÉ¢ÖÜÆÚÎªT£¨Êµ¼Ê´úÂëÖÐ T = 100us)£¬Ôò
+	ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½É¢ï¿½ï¿½ï¿½ï¿½ÎªTï¿½ï¿½Êµï¿½Ê´ï¿½ï¿½ï¿½ï¿½ï¿½ T = 100us)ï¿½ï¿½ï¿½ï¿½
 	a0 = Kp + Ki*T + Kd/T; a1 = Kp + 2*Kd/T; a2 = Kd/T.
-	PIDCalc×Ó³ÌÐò¶ÎÖÐ£¬Äâ²ÉÓÃ£¨2£©µÄÐÎÊ½½øÐÐ¼ÆËã.
+	PIDCalcï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½.
 */
 
-	float pos;       // Îó²î¼«ÐÔ£¬²»Í¬»·Â·»ñÈ¡Îó²î¼«ÐÔ²»Í¬£¬ÏêÏ¸¼ûMatlab·ÂÕæÖÐµÄ
-	                 // ¿ØÖÆÆ÷¿òÍ¼£¬Èç5d¡¢5q»·Â·µÄÎó²î¼«ÐÔÊÇ²»Í¬µÄ£¬¹Ê´Ë¶¨Òåpos±äÁ¿
-					 // ÓÃÒÔ±íÕ÷¸ÃÌØÐÔ£¬¸ÃÖµ¸ù¾ÝÎó²îµÄ¼«ÐÔ£¬·Ö±ðÎª1»ò-1£¬ÓÉ³õÊ¼»¯Ê±¸³Öµ¡£
-	float err;       // µ±Ç°ÅÄÎó²îerr(k)
-	float err1;      // Ç°Á½ÅÄÎó²î£¬err(k-1)
-	float err2;      // Ç°ÈýÅÄÎó²î£¬err(k-2)
+	float pos;       // ï¿½ï¿½î¼«ï¿½Ô£ï¿½ï¿½ï¿½Í¬ï¿½ï¿½Â·ï¿½ï¿½È¡ï¿½ï¿½î¼«ï¿½Ô²ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½Matlabï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½
+	                 // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½5dï¿½ï¿½5qï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½î¼«ï¿½ï¿½ï¿½Ç²ï¿½Í¬ï¿½Ä£ï¿½ï¿½Ê´Ë¶ï¿½ï¿½ï¿½posï¿½ï¿½ï¿½ï¿½
+					 // ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ô£ï¿½ï¿½Ö±ï¿½Îª1ï¿½ï¿½-1ï¿½ï¿½ï¿½É³ï¿½Ê¼ï¿½ï¿½Ê±ï¿½ï¿½Öµï¿½ï¿½
+	float err;       // ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½err(k)
+	float err1;      // Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î£¬err(k-1)
+	float err2;      // Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î£¬err(k-2)
 
-	float PIDU;      // µ±Ç°ÅÄPID¿ØÖÆÆ÷Êä³ö
-	float PIDU1;     // ÉÏÒ»ÅÄPID¿ØÖÆÆ÷Êä³ö
+	float PIDU;      // ï¿½ï¿½Ç°ï¿½ï¿½PIDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	float PIDU1;     // ï¿½ï¿½Ò»ï¿½ï¿½PIDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 }PID_STRUCT;
 
-extern volatile PID_STRUCT GridPLLPID;       //ËøÏà»·PID
-extern volatile PID_STRUCT BriVolPID_D;      //ÇÅ±ÛµçÑ¹DÖá¿ØÖÆPID
-extern volatile PID_STRUCT BriVolPID_Q;      //ÇÅ±ÛµçÑ¹QÖá¿ØÖÆPID
-extern volatile PID_STRUCT IndCurPID_D;       //µç¸ÐµçÁ÷DÖá¿ØÖÆPID
-extern volatile PID_STRUCT IndCurPID_Q;       //µç¸ÐµçÁ÷QÖá¿ØÖÆPID
-extern volatile PID_STRUCT OutVolLoopPID;     //ÕûÁ÷Æ÷µçÑ¹Íâ»·PID
-extern volatile PID_STRUCT FrePowerDroop;     //ÆµÂÊÓÐ¹¦ÏÂ´¹PID
-extern volatile PID_STRUCT VolRePowerDrp;     //µçÑ¹ÎÞ¹¦ÏÂ´¹PID
+extern volatile PID_STRUCT GridPLLPID;       //ï¿½ï¿½ï¿½à»·PID
+extern volatile PID_STRUCT BriVolPID_D;      //ï¿½Å±Ûµï¿½Ñ¹Dï¿½ï¿½ï¿½ï¿½ï¿½PID
+extern volatile PID_STRUCT BriVolPID_Q;      //ï¿½Å±Ûµï¿½Ñ¹Qï¿½ï¿½ï¿½ï¿½ï¿½PID
+extern volatile PID_STRUCT IndCurPID_D;       //ï¿½ï¿½Ðµï¿½ï¿½ï¿½Dï¿½ï¿½ï¿½ï¿½ï¿½PID
+extern volatile PID_STRUCT IndCurPID_Q;       //ï¿½ï¿½Ðµï¿½ï¿½ï¿½Qï¿½ï¿½ï¿½ï¿½ï¿½PID
+extern volatile PID_STRUCT OutVolLoopPID;     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½â»·PID
+extern volatile PID_STRUCT FrePowerDroop;     //Æµï¿½ï¿½ï¿½Ð¹ï¿½ï¿½Â´ï¿½PID
+extern volatile PID_STRUCT VolRePowerDrp;     //ï¿½ï¿½Ñ¹ï¿½Þ¹ï¿½ï¿½Â´ï¿½PID
 extern volatile PID_STRUCT IndCurPID1;          //######################################
 extern volatile PID_STRUCT IndCurPID2;          //######################################
 extern volatile PID_STRUCT IndCurPID3;          //######################################
@@ -459,69 +459,69 @@ extern volatile PID_STRUCT OutVolLoopPID2;                //####################
 
 struct InverterPara_STRUCT
 {
-     float ActivePowerCur;                  //ÓÐ¹¦µçÁ÷
+     float ActivePowerCur;                  //ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½
      float ActivePowerCurFilt;
-	 float ReactivePowerCur;                //ÎÞ¹¦µçÁ÷
-     float ActivePowerFreVar;               //ÓÃ¹¦Ê¹ÆµÂÊÆ«ÒÆ50HzÁ¿
+	 float ReactivePowerCur;                //ï¿½Þ¹ï¿½ï¿½ï¿½ï¿½ï¿½
+     float ActivePowerFreVar;               //ï¿½Ã¹ï¿½Ê¹Æµï¿½ï¿½Æ«ï¿½ï¿½50Hzï¿½ï¿½
 };
 extern volatile struct InverterPara_STRUCT VoltageControl;
 
-//ÓÃÓÚDMAÄ£¿éºÍADC²ÉÑù
+//ï¿½ï¿½ï¿½ï¿½DMAÄ£ï¿½ï¿½ï¿½ADCï¿½ï¿½ï¿½ï¿½
 extern volatile Uint16 *User_DMA_Des,*User_DMA_Source;
 
-struct DeadTime_STRUCT            //ËÀÇø²¹³¥±äÁ¿¼Ä´æÆ÷
+struct DeadTime_STRUCT            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½
 {
-  float IndCurAf;            //ÈýÏàµçÁ÷²ÉÑù£¬¾­¹ýÂË²¨ºó
+  float IndCurAf;            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë²ï¿½ï¿½ï¿½
   float IndCurBf;
   float IndCurCf;
 
-  float IndCurdf;           //µçÁ÷²ÉÑùdq±äÁ¿
+  float IndCurdf;           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½dqï¿½ï¿½ï¿½ï¿½
   float IndCurqf;
 
-  int DTComA;              //ÈýÏàËÀÇø²¹³¥ÊýÖµ
+  int DTComA;              //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
   int DTComB;
   int DTComC;
 };
 extern volatile struct DeadTime_STRUCT DeadTime_Res;
 
-// º¯ÊýÉùÃ÷
-extern void UserSetGPIO(void);               //IOÉè¶¨
-extern void UserSetInt(void);                //ÖÐ¶Ï×Ô¶¨Òå
-extern void UserSetCana();                   //CanAÄ£¿é×Ô¶¨Òå
-extern void EnableDog(void);                 //Ê¹ÄÜ¿´ÃÅ¹·
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern void UserSetGPIO(void);               //IOï¿½è¶¨
+extern void UserSetInt(void);                //ï¿½Ð¶ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½
+extern void UserSetCana();                   //CanAÄ£ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½
+extern void EnableDog(void);                 //Ê¹ï¿½Ü¿ï¿½ï¿½Å¹ï¿½
 extern void KickDog();                       //
-extern void UserSetEPWM();              //EPWMÄ£¿é×Ô¶¨Òå
+extern void UserSetEPWM();              //EPWMÄ£ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½
 extern void User_DQ2abc(volatile struct DQTrans_STRUCT *Trans);
 extern void User_abc2DQ(volatile struct DQTrans_STRUCT *Trans);
 extern void UserSetADC();                   
 extern void UserSetDMA();
-extern void Phase_Lock();               //ËøÏà³ÌÐò£¬ISRÖÐµ÷ÓÃ
-extern void SVPWM_Generate();           //SVPWM·¢Éú³ÌÐò£¬CurCloseLoop()ÖÐµ÷ÓÃ
-extern void AcquireOffSet();           //»ñµÃÖ±Á÷²¹³¥Æ«ÖÃ
-extern void ACBusVolDet();            // µçÍøµçÑ¹¼ì²â
-extern void UserSetVar();             // ³õÊ¼»¯×Ô¶¨Òå²ÎÊý
-extern void GridFreDet();             //µçÍøÆµÂÊ¼ì²â
-extern void DCBusVolDet();            //Ö±Á÷µçÑ¹¼ì²â
-extern void SoftStartFunc();          //ÇÅ±ÛµçÑ¹ÈíÆô¶¯º¯Êý
-extern void InverterOn();             //¿ªÍ¨Õ¼¿Õ±È£¬Ó²¼þ±£»¤£¬·çÉÈ
+extern void Phase_Lock();               //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ISRï¿½Ðµï¿½ï¿½ï¿½
+extern void SVPWM_Generate();           //SVPWMï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½CurCloseLoop()ï¿½Ðµï¿½ï¿½ï¿½
+extern void AcquireOffSet();           //ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ«ï¿½ï¿½
+extern void ACBusVolDet();            // ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½
+extern void UserSetVar();             // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern void GridFreDet();             //ï¿½ï¿½ï¿½ï¿½Æµï¿½Ê¼ï¿½ï¿½
+extern void DCBusVolDet();            //Ö±ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½
+extern void SoftStartFunc();          //ï¿½Å±Ûµï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern void InverterOn();             //ï¿½ï¿½Í¨Õ¼ï¿½Õ±È£ï¿½Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 extern void InverterOff();
-extern void CurrentDet();             //½»Á÷ºÍÖ±Á÷²àµçÁ÷¼ì²â
-extern void CurCloseLoop();           //µçÁ÷±Õ»·
-extern void OutVolLoop();             //ÕûÁ÷Æ÷µçÑ¹Íâ»·
-extern void GridCurClose();           //²¢ÍøµçÁ÷±Õ»·
+extern void CurrentDet();             //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+extern void CurCloseLoop();           //ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½
+extern void OutVolLoop();             //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½â»·
+extern void GridCurClose();           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ»ï¿½
 extern void SendUseECan(Uint32 SendData, Uint16 SendInfo);
 extern void RelayOperation();
 extern void CurUnbalDet();
 extern void ReceiveUseECan();
-extern float LowPassFilter(float PreOut,float Input, float CutFre);          //Ò»½×µÍÍ¨ÂË²¨Æ÷
-extern void STPIDCom(volatile PID_STRUCT *ComCon, float Reference, float Sense);    //ÇÅ±ÛµçÑ¹ÈíÆô¶¯
+extern float LowPassFilter(float PreOut,float Input, float CutFre);          //Ò»ï¿½×µï¿½Í¨ï¿½Ë²ï¿½ï¿½ï¿½
+extern void STPIDCom(volatile PID_STRUCT *ComCon, float Reference, float Sense);    //ï¿½Å±Ûµï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 extern void demofun(void);
-extern void PowerFreLoop(void);                                         //ÓÐ¹¦ÆµÂÊ¿ØÖÆº¯Êý
+extern void PowerFreLoop(void);                                         //ï¿½Ð¹ï¿½Æµï¿½Ê¿ï¿½ï¿½Æºï¿½ï¿½ï¿½
 extern void  EcanDataSend(void);
 extern void FanOperation(void);
 extern void HardFaultDet(void);
-extern void RePowerVolLoop(void);    //ÎÞ¹¦µçÑ¹¿ØÖÆ»·Â·
-extern void DeadTimeCom(void);      //ËÀÇø²¹³¥º¯Êý
+extern void RePowerVolLoop(void);    //ï¿½Þ¹ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½Æ»ï¿½Â·
+extern void DeadTimeCom(void);      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #endif
 
 

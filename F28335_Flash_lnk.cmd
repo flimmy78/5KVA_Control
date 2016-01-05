@@ -131,7 +131,7 @@ SECTIONS
    .pinit              : > FLASHA,     PAGE = 0
    .text               : > FLASHA      PAGE = 0
    codestart           : > BEGIN       PAGE = 0
-   ramfuncs            : LOAD = FLASHD, {C:\tidcs\c28\DSP2833x\v131\DSP2833x_examples\bidirectional_converter2\rts2800_fpu32_fast_supplement.lib},
+   ramfuncs            : LOAD = FLASHD, {rts2800_fpu32_fast_supplement.lib},
                          RUN = RAML0, 
                          LOAD_START(_RamfuncsLoadStart),
                          LOAD_END(_RamfuncsLoadEnd),
