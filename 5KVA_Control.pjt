@@ -1,0 +1,89 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\CCStudio_v3.3PLA\MyProjects\Bidirectional_converter\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="5KW_Main_Rectifier.c"
+Source="CRC16.h"
+Source="DA.c"
+Source="DA_Driver.h"
+Source="DSP2833x_ADC_cal.asm"
+Source="DSP2833x_CodeStartBranch.asm"
+Source="DSP2833x_CpuTimers.c"
+Source="DSP2833x_DefaultIsr.c"
+Source="DSP2833x_DMA.c"
+Source="DSP2833x_ECan.c"
+Source="DSP2833x_GlobalVariableDefs.c"
+Source="DSP2833x_Gpio.c"
+Source="DSP2833x_MemCopy.c"
+Source="DSP2833x_PieCtrl.c"
+Source="DSP2833x_PieVect.c"
+Source="DSP2833x_SysCtrl.c"
+Source="DSP2833x_usDelay.asm"
+Source="LJGlobalVars.c"
+Source="RS232.c"
+Source="RS232.h"
+Source="rts2800_fpu32.lib"
+Source="rts2800_fpu32_fast_supplement.lib"
+Source="UserFunc.c"
+Source="UserSet.c"
+Source="F28335_Flash_lnk.cmd"
+Source="F28335_nonBIOS.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Debug" -i"C:\CCStudio_v3.3PLA\MyProjects\Bidirectional_converter" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=fpu32
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o3 -fr"$(Proj_dir)\Release" -d"LARGE_MODEL" -ml -v28
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\EPWM_TEST.map" -o".\Debug\EPWM_TEST.out" -stack0x380 -w -x -priority
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\EPWM_TEST.map" -o".\Release\EPWM_TEST.out" -w -x
+
+["CRC16.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["CRC16.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["DA_Driver.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["DA_Driver.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["RS232.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["RS232.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["rts2800_fpu32.lib" Settings: "Debug"]
+LinkOrder=2
+
+["rts2800_fpu32_fast_supplement.lib" Settings: "Debug"]
+LinkOrder=1
+
+["F28335_Flash_lnk.cmd" Settings: "Debug"]
+LinkOrder=3
+
+["F28335_Flash_lnk.cmd" Settings: "Release"]
+LinkOrder=1
+
+["F28335_nonBIOS.cmd" Settings: "Debug"]
+LinkOrder=4
+
+["F28335_nonBIOS.cmd" Settings: "Release"]
+LinkOrder=1
+
