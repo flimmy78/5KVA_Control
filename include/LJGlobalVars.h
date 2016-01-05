@@ -75,7 +75,7 @@
 
 
 #define Imax 20		//peak input current max 31.5 RMS
-
+//todo double define
 
 #define Ipeak_limit 58			//Set limit for software overcurrent/voltage protection
 
