@@ -150,6 +150,12 @@ C:/Users/longqi/Desktop/5KVA_Control/../Debug/EPWM_TEST.out \
 EXE_OUTPUTS__QUOTED += \
 "C:\Users\longqi\Desktop\Debug\EPWM_TEST.out" \
 
+BIN_OUTPUTS += \
+C:/Users/longqi/Desktop/Debug/EPWM_TEST.hex \
+
+BIN_OUTPUTS__QUOTED += \
+"C:\Users\longqi\Desktop\Debug\EPWM_TEST.hex" \
+
 
 # All Target
 all: C:/Users/longqi/Desktop/5KVA_Control/../Debug/EPWM_TEST.out
@@ -158,13 +164,19 @@ all: C:/Users/longqi/Desktop/5KVA_Control/../Debug/EPWM_TEST.out
 C:/Users/longqi/Desktop/5KVA_Control/../Debug/EPWM_TEST.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C2000 Linker'
-	"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.9/bin/cl2000" -v28 -ml --float_support=fpu32 -O4 -ms -g --define="_DEBUG" --define="LARGE_MODEL" --diag_warning=225 --display_error_number --obj_directory="C:/Users/longqi/Desktop/Debug" -z -m"C:/Users/longqi/Desktop/Debug/EPWM_TEST.map" --stack_size=0x380 --warn_sections -i"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.9/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.9/include" -i"C:/Users/longqi/Desktop/5KVA_Control" -i"C:/Users/longqi/Desktop" --priority --reread_libs --xml_link_info="C:/Users/longqi/Desktop/Debug/EPWM_TEST_linkInfo.xml" --rom_model -o "C:/Users/longqi/Desktop/5KVA_Control/../Debug/EPWM_TEST.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.9/bin/cl2000" -v28 -ml --float_support=fpu32 -O4 -g --define="_DEBUG" --define="LARGE_MODEL" --diag_warning=225 --display_error_number -ms --obj_directory="C:/Users/longqi/Desktop/Debug" -z -m"C:/Users/longqi/Desktop/Debug/EPWM_TEST.map" --stack_size=0x380 --warn_sections -i"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.9/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.9/include" -i"C:/Users/longqi/Desktop/5KVA_Control" -i"C:/Users/longqi/Desktop" --reread_libs --priority --xml_link_info="C:/Users/longqi/Desktop/Debug/EPWM_TEST_linkInfo.xml" --rom_model -o "C:/Users/longqi/Desktop/5KVA_Control/../Debug/EPWM_TEST.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
+	@echo ' '
+
+C:/Users/longqi/Desktop/Debug/EPWM_TEST.hex: $(EXE_OUTPUTS)
+	@echo 'Invoking: C2000 Hex Utility'
+	"C:/ti/ccsv6/tools/compiler/ti-cgt-c2000_6.4.9/bin/hex2000"  -o "C:/Users/longqi/Desktop/Debug/EPWM_TEST.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXE_OUTPUTS__QUOTED)
+	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
 	-$(RM) "src\5KW_Main_Rectifier.pp" "src\CanBus.pp" "src\DA.pp" "src\LJGlobalVars.pp" "src\RS232.pp" "src\UserFunc.pp" "src\UserSet.pp" "lib\DSP2833x_CpuTimers.pp" "lib\DSP2833x_DMA.pp" "lib\DSP2833x_DefaultIsr.pp" "lib\DSP2833x_ECan.pp" "lib\DSP2833x_GlobalVariableDefs.pp" "lib\DSP2833x_Gpio.pp" "lib\DSP2833x_MemCopy.pp" "lib\DSP2833x_PieCtrl.pp" "lib\DSP2833x_PieVect.pp" "lib\DSP2833x_SysCtrl.pp" 
 	-$(RM) "C:\Users\longqi\Desktop\Debug\5KW_Main_Rectifier.obj" "C:\Users\longqi\Desktop\Debug\CanBus.obj" "C:\Users\longqi\Desktop\Debug\DA.obj" "C:\Users\longqi\Desktop\Debug\LJGlobalVars.obj" "C:\Users\longqi\Desktop\Debug\RS232.obj" "C:\Users\longqi\Desktop\Debug\UserFunc.obj" "C:\Users\longqi\Desktop\Debug\UserSet.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_ADC_cal.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_CodeStartBranch.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_CpuTimers.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_DMA.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_DefaultIsr.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_ECan.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_GlobalVariableDefs.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_Gpio.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_MemCopy.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_PieCtrl.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_PieVect.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_SysCtrl.obj" "C:\Users\longqi\Desktop\Debug\DSP2833x_usDelay.obj" 
 	-$(RM) "C:\Users\longqi\Desktop\Debug\fir16.obj" 

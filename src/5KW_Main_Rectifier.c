@@ -122,7 +122,7 @@ Uint16 SCI_data;
 
 Uint16 INT_Timer2 = 0, Start_Control = 0;
 
-//struct ECAN_REGS ECanbShadow;
+extern struct ECAN_REGS ECanbShadow;
 
 Uint16 Int_PWM = 0;
 Uint16 Int_ADC = 0;
@@ -146,6 +146,9 @@ Uint32 Counter = 0;
 Uint32 TestMbox1 = 0;
 Uint32 TestMbox2 = 0;
 Uint32 TestMbox3 = 0;
+
+union CAN_DATA_UNION can_data;
+union CAN_DATA_UNION *data = &can_data;
 
 void main(void) {
 
@@ -289,7 +292,6 @@ void main(void) {
 
 			 */
 
-
 			if ((Pre_charge_done == 0) && (Pre_charge_start == 1)
 					&& (Pre_charge_cnt >= 2))  //5 seconds for pre-charge period
 					{
@@ -299,9 +301,7 @@ void main(void) {
 				Pre_charge_start = 0;
 
 //				Send_DATA_Inverter(1);		//Send data over CAN
-
-				CAN_DATA_UNION data;
-				data.f = 1;
+				data->f = 1.2;
 				send_data(BIC_ID_INDEX, LED_INDEX, data);
 
 				StartCpuTimer2();			//Start Timer 2
@@ -358,8 +358,7 @@ void Scan_button() {
 			Pre_charge_done = 0;
 
 //			Send_DATA_Inverter(0);
-			CAN_DATA_UNION data;
-			data.f = 0;
+			data->f = 10.1;
 			send_data(BIC_ID_INDEX, LED_INDEX, data);
 		}
 
@@ -863,7 +862,6 @@ interrupt void scic_rx_isr(void) {
 	PieCtrlRegs.PIEACK.all = PIEACK_GROUP8;       // Issue PIE ack
 
 }
-
 
 void InitScicGpio() {
 	EALLOW;
